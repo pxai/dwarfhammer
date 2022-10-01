@@ -1,0 +1,87 @@
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+  }
+  
+  .hex-layer-10 {
+    display: grid;
+    grid-template-columns: repeat(10, 0fr);
+    margin: -18px 0px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .hex-layer-9 {
+    display: grid;
+    grid-template-columns: repeat(9, 0fr);
+    margin: -18px 0px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .hex-layer-8 {
+    display: grid;
+    grid-template-columns: repeat(8, 0fr);
+    margin: -18px 0px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .hex-layer-6 {
+    display: grid;
+    grid-template-columns: repeat(6, 0fr);
+    margin: -18px 0px;
+    justify-content: center;
+    align-content: center;
+  }
+  .hex-layer-5 {
+    display: grid;
+    justify-content: center;
+    margin: -18px 0px;
+    align-content: center;
+    grid-template-columns: repeat(5, 0fr);
+  }
+  .hex-layer-4 {
+    display: grid;
+    margin: -18px 0px;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 0fr);
+  }
+  .hex-layer-3 {
+    display: grid;
+    margin: -18px 0px;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 0fr);
+  }
+  .hex-layer-2 {
+    display: grid;
+    margin: -18px 0px;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 0fr);
+  }
+  .hex {
+    height: 120px;
+    width: 120px;
+    align-self: center;
+    background: #ffd100;
+    -webkit-clip-path: polygon(
+      50% 0%,
+      95% 25%,
+      95% 75%,
+      50% 100%,
+      5% 75%,
+      5% 25%
+    );
+    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    transition: background 0.4s;
+  }
+  
+  .hex:hover {
+    background: #ffff00;
+  }
+  
+    

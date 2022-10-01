@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import {MemoryRouter} from 'react-router-dom'
-import App from './App';
+import About from './About';
 
 test('renders learn react link', () => {
-  render(<App />, {wrapper: MemoryRouter});
-  const titleElement = screen.getByRole('heading', {name: "DwarfHammer"});
+  render(<About />, {wrapper: MemoryRouter});
+  const titleElement = screen.getByText(/A game by pello/i);
   expect(titleElement).toBeInTheDocument();
 });

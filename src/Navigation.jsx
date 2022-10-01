@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import { Outlet, Link } from 'react-router-dom';
+import './Navigation.css';
 
 const Navigation = () => {
   return (
@@ -10,9 +11,15 @@ const Navigation = () => {
           <ul>
             <li>
               <Link className='nav-link' to='/'>
-                Bidali berria
+                Home
               </Link>
             </li>
+            <li>
+              <Link className='nav-link' to='/place'>
+                Place
+              </Link>
+            </li>
+
               <li>
                 <Link className='nav-link' to='/about'>
                   Erregistratu
