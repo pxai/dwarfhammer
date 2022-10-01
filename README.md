@@ -9,7 +9,20 @@ https://dwarfhammer.netlify.app
 
 # butler
 ```
-butler push build pello/dwarfhammer --userversion 0.0.1
+butler push build pello/dwarfhammer:html --userversion 0.0.1
 ```
 HTML must be tagged on itch.io
 
+
+# Notes
+Add this in `package.json` in order to avoid adding static urls under `/`
+
+```json
+  "homepage": "./",
+```
+
+or
+
+```
+PUBLIC_URL='CHANGE_URL'
+```
